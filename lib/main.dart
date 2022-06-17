@@ -1,5 +1,6 @@
-import 'package:api_prictice_flutter/example5/very_complex_data.dart';
 import 'package:flutter/material.dart';
+
+import 'auth_api/sign_in_up_api.dart';
 
 void main() {
   runApp(
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const VeryComplexData(),
+      home: const AuthenticationApi(),
     );
   }
 }
