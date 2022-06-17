@@ -1,4 +1,4 @@
-import 'package:api_prictice_flutter/example2/api_custom_model.dart';
+import 'package:api_prictice_flutter/example3/complex_api.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ApiWithCustomModel(),
+      home: const ComplexJsonData(),
     );
   }
 }
