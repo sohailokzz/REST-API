@@ -14,10 +14,10 @@ class _AuthenticationApiState extends State<AuthenticationApi> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
-  void signUp(String email, String password) async {
+  void logIn(String email, String password) async {
     try {
       Response response = await post(
-        Uri.parse('https://reqres.in/api/register'),
+        Uri.parse('https://reqres.in/api/login'),
         body: {
           'email': email,
           'password': password,
@@ -26,7 +26,7 @@ class _AuthenticationApiState extends State<AuthenticationApi> {
       if (response.statusCode == 200) {
         var data = jsonDecode(response.body.toString());
         print(data['token']);
-        print('Account Successfully created');
+        print('Login Successfully');
       } else {
         print('Failed');
       }
@@ -63,12 +63,12 @@ class _AuthenticationApiState extends State<AuthenticationApi> {
           ),
           ElevatedButton(
             onPressed: () {
-              signUp(
+              logIn(
                 emailController.text,
                 passwordController.text,
               );
             },
-            child: const Text('Sign Up'),
+            child: const Text('Log In'),
           ),
         ],
       ),
