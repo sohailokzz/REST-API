@@ -1,6 +1,5 @@
+import 'package:api_prictice_flutter/example5/very_complex_data.dart';
 import 'package:flutter/material.dart';
-
-import 'example4/complex_api_without_model.dart';
 
 void main() {
   runApp(
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ComplexApiCustomModel(),
+      home: const VeryComplexData(),
     );
   }
 }
