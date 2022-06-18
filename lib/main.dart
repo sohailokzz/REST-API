@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'auth_api/sign_in_up_api.dart';
+import 'image_upload/rest_api_image.dart';
 
 void main() {
   runApp(
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const AuthenticationApi(),
+      home: const RestApiImageUpload(),
     );
   }
 }
